@@ -1,0 +1,26 @@
+.CountryName{
+    margin: 100px 0px 30px 0px;
+}
+.Name{
+    font-size: 27px;
+    margin: auto;
+    height: max-content;
+    width: fit-content;
+    padding: 8px 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.date{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    margin: auto;
+    height: max-content;
+    width: fit-content;
+    padding: 4px 2px;
+}
+span{
+    height: max-content;
+    width: fit-content;
+    padding: 4px 2px;
+}
