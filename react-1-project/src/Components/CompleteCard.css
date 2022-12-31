@@ -1,0 +1,15 @@
+.CompleteCard{
+    display:inline-block;
+    height: 500px;
+    margin: calc(25% - 280px) 0px;
+    width:20%;
+    border-radius: 10px;
+    background-color: rgb(200, 242, 218);
+    box-shadow: 4px 3px 10px 5px rgb(22, 20, 20), -4px -3px 10px 5px rgb(22, 20, 20);
+    /* background-image: url('C:\Users\HP\Desktop\PROJECTS\PROJECT-18\react-1-project\src\images\ivan-bandura-1Hp_6AnkWkc-unsplash.jpg'); */
+    transition: all ease 600ms;
+}
+.CompleteCard:hover{
+    transform: scale3d(1.1, 1.1, 30);
+    cursor:grab;
+}
