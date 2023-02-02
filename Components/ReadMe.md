@@ -5,3 +5,5 @@
 > RsponsiveNavBar - responsive navbar component.
 
 > ImageCarousel - carousel component containing multiple images for display.
+
+> RegisterNameEmailForm - a simple interface for users to register using name and email.
