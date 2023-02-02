@@ -3,3 +3,5 @@
 > HoverBar-slider - slider component
 
 > RsponsiveNavBar - responsive navbar component.
+
+> ImageCarousel - carousel component containing multiple images for display.
