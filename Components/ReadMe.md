@@ -9,3 +9,5 @@
 > RegisterNameEmailForm - a simple interface for users to register using name and email.
 
 > MembersLoginForm - a simple interface for users to login via their emailId and passcodes.
+
+> PageMarker - this component keeps track of the page number when we at a website, can be used for validating multiple pages of a form.
