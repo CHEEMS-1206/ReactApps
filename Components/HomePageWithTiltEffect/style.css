@@ -1,0 +1,140 @@
+@keyframes rotateIt {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-19deg);
+    }
+}
+@keyframes rotateBack {
+    from{
+        transform: rotate(-19deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: max-content;
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+.cont{
+    z-index: 1;
+    background-color: white;
+    height: 100%;
+    /* overflow:auto; */
+    width: 100%;
+}
+.container{
+    z-index: 2;
+    height: max-content;
+    width: 80%;
+    margin: 0px auto;
+    /* border:1px solid black; */
+    padding: 0px 10%;
+    padding-top: 100px;
+}
+.navbar{
+    z-index: 3;
+    position:fixed;
+    top:-100px;
+    left:-100px;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    align-content: flex-end;
+    justify-content: end;
+    background-color: red;
+    color:white;
+    font-size: 30px;
+    padding: 50px;
+    text-align: end;
+    border-radius: 50%;
+}
+i:hover{
+    cursor: pointer;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+h1{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0%;
+}
+h1{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0%;
+}
+label{
+    margin: 0px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    color:#7f8c8d;
+}
+p{
+    margin: 40px 0px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 22px;
+}
+.rotate{
+    transform-origin:0px 0px;
+    animation-duration: 1500ms;
+    transform: rotate(-19deg);
+    animation-name: rotateIt;
+}
+.rotateBack{
+    transform-origin:0px 0px;
+    animation-duration: 1500ms;
+    transform: rotate(0deg);
+    animation-name: rotateBack;
+}
+.navbarHid{
+    position: fixed;
+    bottom:50px;
+    left:-30px
+}
+.navbarHid ul li {
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 0px;
+}
+.navbarHid ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbarHid ul:first-child(){
+    margin-left: 0px;
+}
+.navbarHid ul li:nth-child(2){
+    margin-left: 25px;
+}
+.navbarHid ul li:nth-child(3){
+    margin-left: 50px;
+}
+
+.disp{
+    display: inline;
+}
+.nodisp{
+    display: none;
+}
