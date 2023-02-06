@@ -13,3 +13,5 @@
 > PageMarker - this component keeps track of the page number when we at a website, can be used for validating multiple pages of a form.
 
 > HomePageWithTiltEffect - this is a simple home page which tilts when we click on the button to the show the navigation bar.
+
+> DualWindowPane - this components lets the user to display 2 products in a single screen, on hover one of the pane expands.
