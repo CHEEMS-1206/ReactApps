@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-flow: row;
+  overflow: hidden;
+}
+.container-1,
+.container-2 {
+  height: 100vh;
+  position: absolute;
+  width: 50vw;
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-1 {
+  background-image: url("./images/ps5-min.jpg");
+  left: 0px;
+  z-index: 1;
+}
+.container-2 {
+  background-image: url("./images/xbox-min.jpg");
+  right: 0px;
+}
+.container-1::before {
+  content: "";
+  background-color: rgba(87, 84, 236, 0.7);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  z-index: 2;
+}
+.container-2::before {
+  content: "";
+  background-color: rgba(43, 43, 43, 0.7);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  z-index: 2;
+}
+.head {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 100px 0px;
+  z-index: 3;
+}
+.Btn {
+  border: 4px solid white;
+  width: max-content;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 80px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  align-self: center;
+  border-collapse: collapse;
+  margin-bottom: 200px;
+  z-index: 3;
+}
+.Btn:hover {
+  background-color: #16a085;
+  transition-duration: 0.5s;
+  box-sizing: content-box;
+  border: 4px solid #16a085;
+}
+.left:hover {
+  background-color: #2e86de;
+  border: 4px solid #2e86de;
+}
+
+
+.left-hover.container-1{
+    width: 75vw;
+    transition-duration: 1500ms;
+}
+.left-hover.container-2{
+    width:25vw;
+    transition-duration: 1500ms;
+}
+.right-hover.container-2{
+    width: 75vw;
+    transition-duration: 1500ms;
+}
+.right-hover.container-1{
+    width:25vw;
+    transition-duration: 1500ms;
+}
