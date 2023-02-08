@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container ">
+      <!-- <div class="header">
+        <label for="" class="companyName">Sidenavbar Project</label>
+      </div> -->
+      <div class="sideNav1 dispShow" id="minSideBar">
+          <ul>
+          <li><i class="fa-solid fa-bars " id="menus" style="border-color: black;color:white;"></i></li>
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><a href=""><i class="fa-solid fa-table-columns"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-message"></i> </li>
+          <li><a href=""><i class="fa-solid fa-chart-pie"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-folder-open"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-bookmark"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-gear"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+      </div>
+      <div class="sideNav2 dispHid" id="maxSideBar">
+        <div class="topHead">
+          <h3>Paji....</h3>
+          <!-- <span class ="dispHid" ><i class="fa-solid fa-bars "></i></span> -->
+          <span><i class="fa-solid fa-xmark "id="close"></i></span>
+        </div>
+
+        <div class="searchHolder">
+            <input type="search" name="searchBar" id="searchBar"/>
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+
+        <ul class="thisOnly">
+          <li id="listItem-1">
+            <a href=""><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+          </li>
+          <li id="listItem-2"><a href=""><i class="fa-solid fa-user"></i> Users</a></li>
+          <li id="listItem-3"><a href=""><i class="fa-solid fa-message"></i> Messages</a></li>
+          <li id="listItem-4">
+            <a href=""><i class="fa-solid fa-chart-pie"></i> Analytics</a>
+          </li>
+          <li id="listItem-5">
+            <a href=""><i class="fa-solid fa-folder-open"></i> File manager</a>
+          </li>
+          <li id="listItem-6">
+            <a href=""><i class="fa-brands fa-first-order-alt"></i> Order</a>
+          </li>
+          <li id="listItem-7"><a href=""><i class="fa-solid fa-bookmark"></i> Saved</a></li>
+          <li id="listItem-8"><a href=""><i class="fa-solid fa-gear"></i> Settings</a></li>
+        </ul>
+
+        <div class="bottomFoot">
+          <!-- <img src="data:image/png;base64,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" alt="" /> -->
+          <p class="nameUser">Username</p>
+          <p class="jobUser">job profile</p>
+          <span class="sideElement"
+            ><a href=""><i class="fa-solid fa-right-from-bracket"></i></a></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
