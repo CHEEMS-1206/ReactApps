@@ -17,3 +17,5 @@
 > DualWindowPane - this components lets the user to display 2 products in a single screen, on hover one of the pane expands.
 
 > LoginForm - Login page component.
+
+> LeftAlignedNavBar - a navbar that is aligned to theleft side of the page.
