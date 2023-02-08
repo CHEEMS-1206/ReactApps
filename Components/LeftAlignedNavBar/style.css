@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+i:hover{
+    cursor: pointer;
+}
+.container {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+.header {
+  padding: 0px 20px;
+  background-color: #2c3e50;
+  height: max-content;
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+}
+.header label {
+  align-self: center;
+  font-size: 25px;
+  color: #ecf0f1;
+  margin: 12.5px 20px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+}
+
+.sideNav1,.sideNav2 {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  max-width: 250px;
+  color: white;
+  height: calc(100% - 20px);
+  border-radius: 10px;
+  background-color: #273c75;
+  padding: 0px;
+  flex-flow: column;
+  box-shadow: 0px 5px 5px 0px #7f8c8d;
+}
+
+.topHead {
+  width: 100%;
+  align-self: flex-start;
+  justify-self: left;
+  display: flex;
+  justify-content: space-between;
+}
+.topHead h3 {
+  display: inline-block;
+  width: max-content;
+  align-self: flex-start;
+  padding: 15px 20px;
+  align-self: center;
+}
+.topHead span {
+  padding: 25px 20px;
+  font-size: 15px;
+}
+
+.searchHolder {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+#searchBar {
+  font-size: 18px;
+  border-radius: 20px;
+  width:170px;
+  padding-left: 20px;
+}
+.searchHolder span {
+  font-size: 15px;
+  padding: 2px 20px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.sideNav1 ul,.sideNav2 ul {
+  margin: 20px 0px;
+  padding: 0px;
+}
+.sideNav1 ul li,.sideNav2 ul li {
+  list-style-type: none;
+  padding: 13px 10px;
+  width: 100%;
+  margin: 0px;
+}
+
+.sideNav1 ul li i{
+  padding: 0px 8px;
+}
+.sideNav2 ul li i {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.bottomFoot {
+  position: relative;
+  left:10px;
+  bottom: -50px;
+  justify-self: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 20px 110px 10px 50px;
+  grid-template-rows: 30px 30px;
+}
+.bottomFoot img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 85%;
+  width: 100%;
+  border-radius: 10px;
+}
+.nameUser {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  font-size: 12px;
+}
+.jobUser {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  font-size: 12px;
+
+}
+.sideElement {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  text-align: center;
+  grid-row-end: 3;
+}
+
+
+.hoverlistcolor{
+    background-color: white;
+    border-radius: 15px;
+}
+.hoverAcolor a{
+    color:black;
+}
+
+.dispHid{
+    display: none;
+}
+.dispShow{
+    display:block;
+}
+
