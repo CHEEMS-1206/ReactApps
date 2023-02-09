@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.textSlider {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in;
+}
+.textSlider h1,
+.textSlider p {
+  color: white;
+  font-size: 40px;
+  margin: 16px 0px;
+}
+.textSlider p {
+  max-width: 300px;
+  font-size: 15px;
+  text-align: center;
+}
+.imageSlider {
+  height: 100%;
+  width: 65%;
+  background-color: black;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+#buttonUp {
+  position: fixed;
+  left: 35%;
+  top: 300px;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+#buttonDown {
+  position: fixed;
+  left: calc(35% - 31px);
+  top: 330px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+  z-index: 2;
+}
+
+#b1 {
+  background-image: url("./images/alex-sh-YVFcRupkPj0-unsplash.jpg");
+}
+#b2 {
+  background-image: url("./images/alex-sh-rfZfJfYrKoA-unsplash.jpg");
+}
+#b3 {
+  background-image: url("./images/behnam-mohsenzadeh-t9xJia7UJKQ-unsplash.jpg");
+}
+#b4 {
+  background-image: url("./images/brecht-corbeel-7r30ePMcYeA-unsplash.jpg");
+}
+
+#a1 {
+  background-color: #8c7ae6;
+}
+#a2 {
+  background-color: #192a56;
+}
+#a3 {
+  background-color: #2c3e50;
+}
+#a4 {
+  background-color: #0984e3;
+}
