@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link for fonts  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- fonts  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+
+    <!-- jquery cdnlink  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">Send us a message</div>
+      <form
+        action=""
+        method="post"
+      >
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input
+          type="hidden"
+          name="_next"
+          value=""
+        />
+        <input
+          type="hidden"
+          name="_subject"
+          value="You have recieved a new mail !"
+        />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Thank you for reaching out.\nwe have recieved your Email."
+        />
+
+        <div class="dbl-field">
+          <div class="field" id="name">
+            <input
+              type="text"
+              name="name"
+              id="NAME"
+              placeholder="Enter your name.."
+              maxlength="25"
+            />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="field" id="email">
+            <input
+              type="email"
+              name="email"
+              id="EMAIL"
+              placeholder="Enter your E-mail.."
+              maxlength="40"
+            />
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field" id="phone">
+            <input
+              type="number"
+              name="number"
+              id="PHONE"
+              placeholder="Enter your Number.."
+              maxlength="10"
+              min="0"
+            />
+            <i class="fa-solid fa-phone-alt"></i>
+          </div>
+          <div class="field" id="website">
+            <input
+              type="url"
+              name="website"
+              id="WEBSITE"
+              placeholder="Enter your website.."
+              maxlength="40"
+            />
+            <i class="fa-solid fa-globe"></i>
+          </div>
+        </div>
+        <div class="dbl-field" id="message">
+          <textarea
+            name="message"
+            id="MESSAGE"
+            placeholder="Your querry...."
+            maxlength="500"
+          ></textarea>
+          <i class="material-icons">message</i>
+        </div>
+        <div class="buttonContainer">
+          <button type="submit">Send Message</button>
+          <span>Sending your message...</span>
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
