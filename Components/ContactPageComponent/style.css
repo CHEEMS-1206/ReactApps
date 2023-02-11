@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.wrapper {
+  width: 720px;
+  background-color: white;
+  border-radius: 6px;
+}
+.wrapper .header {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  background-color: crimson;
+  color: white;
+  border-bottom: 2px solid #bfbfbf;
+}
+.wrapper form {
+  margin: 35px 30px;
+}
+.wrapper form .dbl-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.dbl-field .field {
+  height: 50px;
+  width: calc(50% - 13px);
+  position: relative;
+}
+#message {
+  position: relative;
+}
+#message i {
+  font-size: 22px;
+  top: 20px;
+}
+#message textarea,
+.field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: crimson;
+  font-size: 16px;
+}
+#message textarea::placeholder,
+.field input::placeholder {
+  color: #bfbfbf;
+}
+#message textarea:focus,
+.field input:focus {
+  border: 2px solid crimson;
+}
+.wrapper form i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  pointer-events: none;
+  font-size: 17px;
+  color: crimson;
+  transform: translateY(-50%);
+}
+#message textarea {
+  min-height: 120px;
+  padding: 15px 20px 0 48px;
+  resize: vertical;
+  max-height: 300px;
+}
+
+.buttonContainer {
+  margin: 20px 25px;
+}
+.buttonContainer button {
+  padding: 13px 25px;
+  background-color: crimson;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.buttonContainer span {
+  color: crimson;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 30px;
+  display: none;
+}
+
+/* responsiveness  */
+@media(max-width: 600px) {
+  .wrapper .header {
+    text-align: center;
+  }
+  form .dbl-field {
+    margin-bottom: 0px;
+    flex-direction: column;
+  }
+  .dbl-field .field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  form .buttonContainer {
+    flex-direction: column;
+  }
+  .buttonContainer button {
+    width: 100%;
+  }
+  .buttonContainer span {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    display: inline-block;
+  }
+  form textarea{
+    resize: none;
+    overflow: auto;
+  }
+}
