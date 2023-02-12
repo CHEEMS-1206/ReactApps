@@ -23,3 +23,5 @@
 > SocialMediaFollowerCounter - a component that counts the number of social media visitors upon entering the site.
 
 > VerticalImageSlider - a vertical slider component for your website.
+
+> ContactPageComponent - contact us component.
