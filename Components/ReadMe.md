@@ -19,3 +19,5 @@
 > LoginForm - Login page component.
 
 > LeftAlignedNavBar - a navbar that is aligned to theleft side of the page.
+
+> SocialMediaFollowerCounter - a component that counts the number of social media visitors upon entering the site.
