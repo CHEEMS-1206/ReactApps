@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0;
+  background-color:cornsilk;
+}
+.app{
+  border:1px solid black;
+  display: flex;
+  justify-content: top;
+  height:100vh;
+  width: 100vw;
+  align-items: center;
+  flex-flow: column;
+}
+span{
+  font-size: 50px;
+  font-weight: 800;
+}
+button{
+  color:white;
+  background-color:darkblue;
+  min-width: 50px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 15px;
+  font-size: 28px;
+}
+.decColor{
+  background-color: crimson;
+}
