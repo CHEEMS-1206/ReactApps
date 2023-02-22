@@ -6,11 +6,13 @@ function ObjectAsArgument() {
   const theme = state.theme;
   function decrementCount() {
     setState((prevState) => {
+      console.log("rendered");
       return { count: prevState.count - 1 }; // when changing a value the other parameters are not spread using spread operator
     });
   }
   function incrementCount() {
     setState((prevState) => {
+      console.log("rendered");
       return { ...prevState, count: prevState.count + 1 }; // when changing a value the other parameters are spread using spread operator
     });
   }

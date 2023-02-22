@@ -19,9 +19,11 @@ function UseState() {
 
   function decrementCount() {
     setCount((prevCount) => prevCount - 1); // use concept of previous values
+    console.log("rendered");
   }
   function incrementCount() {
     setCount((prevCount) => prevCount + 1);
+    console.log("rendered");
   }
 /*
     useState function accepts an argument as current state.
